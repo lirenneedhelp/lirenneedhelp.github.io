@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "css/css.css">
     <title>Openings page</title>
+    <script src = "js/script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul class = "nav-links">
-                
+            <a href = "#" id = "mobilenav">
+                <img class = "hamburgersize" src = "img/hamburger2.jpg" alt = "hamburger menu">
+            </a>
+            <ul class = "nav-links">           
                 <li><a href="index.html">Home</a></li>
                 <li><a href="learntoplay.html">How to play</a></li>
                 <li><a class = "active" href="openings.html">Openings</a></li>
@@ -19,25 +22,22 @@
             </ul>   
         </nav>
     </header>
-    <h1 class = "mainfont">
-        OPENINGS
-    </h1>
     <section class = "section-a">
         <h1>Let me bring you through some openings that can be used against your opponents </h1>
         <p>The opening phase of a chess game is fairly important</p>
 
         <div>
-            <p>1.)Scandinavian Defense</p>
-            <p>2.)Italian Game</p>
-            <p>3.)Sicilian Defense</p> 
-            <p>4.)French Defense</p>
-            <p>5.)The Ruy-Lopez</p>  
+            <a href = "#l"><p>1.)Scandinavian Defense</p></a>
+            <a href = "#m"><p>2.)Italian Game</p></a>
+            <a href = "#n"><p>3.)Sicilian Defense</p></a>
+            <a href = "#o"><p>4.)French Defense</p></a>
+            <a href = "#p"><p>5.)The Ruy-Lopez</p> </a> 
         </div>   
 
 
     </section>
     <section class = "section-b">
-        <h4>The Scandinavian Defense</h4>
+        <h4 id = "l">The Scandinavian Defense</h4>
         <p>The Scandinavian Defense, formerly better known in English language texts as the Center-Counter, is Black's seventh most popular response to 1.e4.</p>
         <p>Easily White's best response, and overwhelmingly its most popular, is to capture with 2.exd5. Although it is Black's first move that defines the Scandinavian,</p>
         <p>the position after that pawn capture is effectively the starting position for the opening. It's at this point where the Scandinavian really gets interesting.</p>
@@ -51,6 +51,84 @@
         <p>White actually has several reasonable options here, but by far the most common is 3.Nc3, immediately</p>
         <p>asking Black why the queen exposed herself so soon. The temptation as Black on move three may be</p>
         <p>to check the white king down the e-file, but this is considered inferior to three main alternatives.</p>
+
+        <div class="chessboard">
+            <div>
+        <!-- 1st -->
+        <div class="white"><img id = "first" src = "img/blackrook.svg" alt = "blackrook"></div>
+        <div class="black"><img src = "img/blackknight.svg" alt = "blackknight"></div>
+        <div class="white"><img src = "img/blackbishop.svg" alt = "blackbishop"></div>
+        <div class="black"><img id = "blackqueen" src = "img/blackqueen.svg" alt = "blackqueen"></div>
+        <div class="white"><img src = "img/blackking.svg" alt = "blackking"></div>
+        <div class="black"><img src = "img/blackbishop.svg" alt = "blackbishop"></div>
+        <div class="white"><img src = "img/blackknight.svg" alt = "blackknight"></div>
+        <div class="black"><img src = "img/blackrook.svg" alt = "blackrook"></div>
+        <!-- 2nd -->
+        <div class="black"><img id = "firstpawn"  src = "img/blackpawn.svg" alt = "blackpawn" draggable="true"></div>
+        <div class="white"><img id = "secondpawn"src = "img/blackpawn.svg" alt = "blackpawn"></div>
+        <div class="black"><img id = "thirdpawn"src = "img/blackpawn.svg" alt = "blackpawn"></div>
+        <div class="white"><img id = "forthpawn"src = "img/blackpawn.svg" alt = "blackpawn"></div>
+        <div class="black"><img id = "fifthpawn"src = "img/blackpawn.svg" alt = "blackpawn"></div>
+        <div class="white"><img id = "sixthpawn"src = "img/blackpawn.svg" alt = "blackpawn"></div>
+        <div class="black"><img id = "seventhpawn"src = "img/blackpawn.svg" alt = "blackpawn"></div>
+        <div class="white"><img id = "eighthpawn"src = "img/blackpawn.svg" alt = "blackpawn"></div>
+        <!-- 3th -->
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <!-- 4st -->
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <!-- 5th -->
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <!-- 6th -->
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <!-- 7th -->
+        <div class="white"><img id = "firstwhitepawn" src = "img/whitepawn.svg" alt = "whitepawn"></div>
+        <div class="black"><img id = "secondwhitepawn" src = "img/whitepawn.svg" alt = "whitepawn"></div>
+        <div class="white"><img id = "thirdwhitepawn" src = "img/whitepawn.svg" alt = "whitepawn"></div>
+        <div class="black"><img id = "forthwhitepawn" src = "img/whitepawn.svg" alt = "whitepawn"></div>
+        <div class="white"><img id = "fifthwhitepawn" src = "img/whitepawn.svg" alt = "whitepawn"></div>
+        <div class="black"><img id = "sixthwhitepawn" src = "img/whitepawn.svg" alt = "whitepawn"></div>
+        <div class="white"><img id = "seventhwhitepawn" src = "img/whitepawn.svg" alt = "whitepawn"></div>
+        <div class="black"><img id = "eighthwhitepawn" src = "img/whitepawn.svg" alt = "whitepawn"></div>
+        <!-- 8th -->
+        <div class="black"><img src = "img/whiterook.svg" alt = "whiterook"></div>
+        <div class="white"><img src = "img/whiteknight.svg" alt = "whiteknight"></div>
+        <div class="black"><img src = "img/whitebishop.svg" alt = "whitebishop"></div>
+        <div class="white"><img src = "img/whitequeen.svg" alt = "whitequeen"></div>
+        <div class="black"><img src = "img/whiteking.svg" alt = "whiteking"></div>
+        <div class="white"><img src = "img/whitebishop.svg" alt = "whitebishop"></div>
+        <div class="black"><img src = "img/whiteknight.svg" alt = "whiteknight"></div>
+        <div class="white"><img src = "img/whiterook.svg" alt = "whiterook"></div>
+        </div>
+        </div>
+        <p id = "buttonscandi">Click here to see the opening on the board!</p>
 
         <h5>3...Qa5</h5>
         <p>The most common move for Black. Black often plays ...c6 to drop the queen back to c7 at some point,</p>
@@ -85,7 +163,7 @@
         <p>the Scandinavian, compared to 40% against the French or 37% against the Sicilian.</p>
     </section>
     <section class = "section-c">
-        <h4>Italian Game</h4>
+        <h4 id = "m">Italian Game</h4>
         <h5>1.e4 e5 2.Nf3 Nc6 3.Bc4</h5>
         <p>The Italian Game is one of the oldest openings</p>
         <p>in chess and has been around for centuries. This</p>
@@ -144,7 +222,7 @@
 
     </section>
     <section class = "section-d">
-        <h4>Sicilian Defense</h4>
+        <h4 id = "n">Sicilian Defense</h4>
 
         <h5>1.e4 c5</h5>
         <p>The Sicilian Defense is the most popular response to White's 1.e4. Employed by masters and</p>
@@ -166,7 +244,7 @@
         <p>many other Sicilian systems.​</p>
     </section>
     <section class = "section-e">
-        <h4>French Defense</h4>
+        <h4 id = "o">French Defense</h4>
         <p>The French Defense is one of the most popular Black responses to 1.e4. It has consistently been a</p>
         <p>part of masters' repertoire since the 1800s and one of the favorites of positional players. Usually</p>
         <p>leading to slower games, this opening is a good choice for players of all levels.</p>
@@ -177,7 +255,7 @@
         <p>advancing the pawn, creating a space advantage with locked pawn chains in the center.</p>
     </section>
     <section class = "section-f">
-        <h4>The Ruy Lopez</h4>
+        <h4 id = "p">The Ruy Lopez</h4>
         <h5>1.e4 e5 2.Nf3 Nc6 3.Bb5</h5>
         <p>The Ruy Lopez starts after 3.Bb5. This move threatens 4.Bxc6, leaving the e5-pawn</p>
         <p>undefended. What makes this opening unique is that the threats on the d5-pawn</p>
