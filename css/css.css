@@ -1,0 +1,102 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Mogra', cursive;
+
+}
+section
+{
+    background-color: white;
+    color:red;
+    flex-basis: 100%;
+    margin-top:200px;
+    padding: 40px;
+
+}
+body
+{
+    border: red solid 5px;
+    background-color: rgba(21, 71, 146, 0.781);
+
+
+    display: flex;
+	flex-flow: row wrap;
+}
+.maindiv
+{
+    display:flex;
+}
+.divhalf
+{
+    flex-basis: 50%;
+}
+
+header .logo{
+    font-weight:bolder;
+    font-size: 25px;
+    color:grey;
+    text-decoration: none;
+
+}
+header{
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+  background-color: white;
+
+}
+
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    color:black;
+    padding:20px;
+    display:block;
+    text-decoration: none;
+}
+
+
+header .navbar ul li a:hover:not(.active) {
+	background-color: grey;
+}
+
+header .navbar ul li a.active {
+	background-color: grey;
+}
+header .navbar ul li a:visited {
+	text-decoration: none;
+}
+p
+{
+    padding-top: 10px;
+    font-size:20px;
+
+}
+h1
+{
+    text-align: center;
+}
+h3
+{
+    padding-top: 10px;
+    font-size:40px;
+}
+div
+{
+    text-align: center;
+    padding:40px;
+}
+.aligncenter
+{
+    text-align: center;
+}
