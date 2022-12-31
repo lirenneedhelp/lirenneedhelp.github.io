@@ -84,6 +84,8 @@ p
 }
 h1
 {
+    padding:40px;
+    flex-basis: 100%;
     text-align: center;
 }
 h3
