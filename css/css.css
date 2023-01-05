@@ -9,17 +9,29 @@
 section
 {
     background-color: white;
-    color:red;
+    color:white;
     flex-basis: 100%;
     margin-top:200px;
     padding: 40px;
+    background-color: rgba(21, 71, 146, 0.781);
+
 
 }
 body
 {
-    border: red solid 5px;
-    background-color: rgba(21, 71, 146, 0.781);
 
+    background-image: url("../img/gamebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+	flex-flow: row wrap;
+}
+.body2
+{
+    background-image: url("../img/gamebg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
 	flex-flow: row wrap;
@@ -84,6 +96,7 @@ p
 }
 h1
 {
+    color:white;
     padding:40px;
     flex-basis: 100%;
     text-align: center;
@@ -100,4 +113,8 @@ div
 .aligncenter
 {
     text-align: center;
+}
+img
+{
+    padding:10px;
 }
