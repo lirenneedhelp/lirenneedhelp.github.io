@@ -42,7 +42,7 @@ body
 }
 .divhalf
 {
-    flex-basis: 50%;
+    flex-basis: 30%;
 }
 
 header .logo{
