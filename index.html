@@ -2,48 +2,229 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "css/css.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&family=Mogra&display=swap" rel="stylesheet">
-    <title>Main Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Li Ren's Responsive Portfolio Website</title>
 </head>
-<header>
-    <a href="index.html" class = "logo">LIREN</a>
-    <nav class="navbar">
-        <ul>    
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pastwork.html">Projects</a></li>
-            <li><a href="about.html">Contact</a></li>
-        </ul>      
-    </nav>
-</header>
 <body>
-<div class = "container">
-    <div class="wrapper">
-        <section>
-            <div class="section-wrapper section-1-wrapper">
-            <div class = "maindiv">
-                <div class = "divquarter">
-                    <img src = "img/welcome.gif">
+    <!-- Navigation Menu -->
+     <nav>
+        <div class = "nav-container">
+            <div class = "logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Li Ren</span>
+            </div>
+            <div class = "links">
+                <div class = "link" data-aos="fade-up" data-aos-duration="100"><a href="#">Home</a></div>
+                <div class = "link" data-aos="fade-up" data-aos-duration="200"><a href="#about">About</a></div>
+                <div class = "link" data-aos="fade-up" data-aos-duration="300"><a href="#skills">Skills</a></div>
+                <div class = "link" data-aos="fade-up" data-aos-duration="400"><a href="#services">Services</a></div>
+                <div class = "link" data-aos="fade-up" data-aos-duration="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class = "fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class = "dropdown">
+            <div class = "links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <i class = "fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+     </nav>
+     <section>
+        <div class = "main-container">
+            <div class = "image" data-aos="zoom-out" data-aos-duration="500">
+                <img src="img/main.jpg" alt="">
+            </div>
+            <div class = "content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    Hey I'm
+                    <span>Li Ren</span>
+                </h1>
+                <div class = "typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">I'm a <span class = "typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    I am a Game Developer with a Game Development background from Nanyang Polytechnic. I've been developing games for 3 years now. I thoroughly enjoy the process of creating game mechanics, drawing inspiration from other games, and integrating new ideas into my projects.</p>
+                <div class = "social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><i class = "fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><i class = "fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><i class = "fa-brands fa-linkedin"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><i class = "fa-brands fa-twitter"></i></a>
                 </div>
-                <div>
-                    <h1 class = "section-1-heading">The Amazing World Of Li Ren</h1>
-                    <h3>Hi,I'm Li Ren.</h3>
-                    <p>I'm a student from Nanyang Polytechnic who is currently studying in the Diploma Of Game Development & Technology.</p>
-               
+                <div class = "btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
                 </div>
             </div>
+        </div>
+     </section>
+
+     <!-- About Section Start -->
+      <section class = "about" id = "about">
+        <div class = "content">
+            <div class = "title" data-aos="fade-up" data-aos-duration="1500">
+                <span>About me</span>
+            </div>
+            <div class = "about-details">
+                <div class = "left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="img/main.jpg" alt="">
+                </div>
+                <div class = "right">
+                    <div class = "topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">Programming Is My Passion</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                        During my 3 years of Game Development.I've demonstrated versatility in game development, having experience in various areas such as gameplay programming, UI development, and AI implementation. My versatility is complemented by a willingness to explore different parts of game development, which broadens my horizons.
+                    </p>
+                    <div class = "button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+                        <button class="download-btn" onclick="downloadFile()">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- My Skill Section Start -->
+       <section class = "skills" id = "skills">
+            <div class = "content">
+                <div class = "title" data-aos="fade-up" data-aos-duration="1200">
+                    <span>My Skills</span>
+                </div>
+                <div class = "skills-details">
+                    <div class = "text">
+                        <div class = "topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                            Skills Reflects Our Knowledge
+                        </div>
+                        <p data-aos="fade-right">I have a strong proficiency in C#, particularly in game development, as I have extensively used it to build major projects in the Unity Game Engine.My experience includes implementing game mechanics, user interfaces, and scripting complex systems, with a focus on efficient code structure and performance optimization.  I have an intermediate-level proficiency in C++, with about 3 years of experience. I'm comfortable with core concepts such as object-oriented programming, data structures, memory management, and working with OpenGL Library for Graphics Programming.  </p>
+                        <div class = "experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600"> 
+                            <div class = "num">4</div>
+                            <div class = "exp">
+                                Years Of <br/>
+                                Experience
+                            </div>  
+                        </div>
+                    </div>
+                        <div class = "boxes">
+                            <div class = "box">
+                                <div class = "topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">C#</div>
+                                <div class = "per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">70%</div>
+                            </div>
+                            <div class = "box">
+                                <div class = "topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">C++</div>
+                                <div class = "per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">50%</div>
+                            </div>
+                            <div class = "box">
+                                <div class = "topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">Python</div>
+                                <div class = "per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">40%</div>
+                            </div>
+                            <div class = "box">
+                                <div class = "topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">SQL</div>
+                                <div class = "per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">50%</div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+       </section>
+
+       <!-- My Services Section Start -->
+        <section class = "services" id = "services">
+            <div class = "content">
+                <div class = "title" data-aos="fade-up" data-aos-duration="1200">
+                    <span>My Services</span>
+                </div>
+                <div class = "boxes">
+                    <div class = "box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <div class = "icon">
+                            <i class = "fas fa-desktop"></i>
+                        </div>
+                        <div class = "topic">Game Development</div>
+                        <p>
+                            I have 3 years of game development experience, working with game engines such as Unity and Unreal Engine, as well as the OpenGL library. I’ve developed a 2D platformer and a 3D action game in Unity, and I’ve also created both 2D and 3D games using the OpenGL library. My experience spans a range of game genres and development environments, showcasing my versatility and technical expertise in game creation.
+                        </p>
+                    </div>
+                    <div class = "box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <div class = "icon">
+                            <i class = "fas fa-desktop"></i>
+                        </div>
+                        <div class = "topic">AI Engineering</div>
+                        <p>
+                            Lorem ipsum dolor sit amet. Est inventore voluptate non dolorum sint sit distinctio voluptates est impedit autem id illo neque vel iusto internos! 33 veritatis consequatur id animi corporis eos repellendus recusandae. Qui consequatur corrupti ea obcaecati laboriosam et quasi amet qui minima necessitatibus sed aliquid laboriosam qui beatae nesciunt aut aliquam eveniet.
+                        </p>
+                    </div>
+                    <div class = "box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <div class = "icon">
+                            <i class = "fas fa-desktop"></i>
+                        </div>
+                        <div class = "topic">Data Engineering</div>
+                        <p>
+                            Lorem ipsum dolor sit amet. Est inventore voluptate non dolorum sint sit distinctio voluptates est impedit autem id illo neque vel iusto internos! 33 veritatis consequatur id animi corporis eos repellendus recusandae. Qui consequatur corrupti ea obcaecati laboriosam et quasi amet qui minima necessitatibus sed aliquid laboriosam qui beatae nesciunt aut aliquam eveniet.
+                        </p>
+                    </div>
+                    <div class = "box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                        <div class = "icon">
+                            <i class = "fas fa-desktop"></i>
+                        </div>
+                        <div class = "topic">Software Development</div>
+                        <p>
+                            Lorem ipsum dolor sit amet. Est inventore voluptate non dolorum sint sit distinctio voluptates est impedit autem id illo neque vel iusto internos! 33 veritatis consequatur id animi corporis eos repellendus recusandae. Qui consequatur corrupti ea obcaecati laboriosam et quasi amet qui minima necessitatibus sed aliquid laboriosam qui beatae nesciunt aut aliquam eveniet.
+                        </p>
+                    </div>
+                    <div class = "box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                        <div class = "icon">
+                            <i class = "fas fa-desktop"></i>
+                        </div>
+                        <div class = "topic">Web Development</div>
+                        <p>
+                            Lorem ipsum dolor sit amet. Est inventore voluptate non dolorum sint sit distinctio voluptates est impedit autem id illo neque vel iusto internos! 33 veritatis consequatur id animi corporis eos repellendus recusandae. Qui consequatur corrupti ea obcaecati laboriosam et quasi amet qui minima necessitatibus sed aliquid laboriosam qui beatae nesciunt aut aliquam eveniet.
+                        </p>
+                    </div>
+                    <div class = "box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                        <div class = "icon">
+                            <i class = "fas fa-desktop"></i>
+                        </div>
+                        <div class = "topic">Backend Development</div>
+                        <p>
+                            Lorem ipsum dolor sit amet. Est inventore voluptate non dolorum sint sit distinctio voluptates est impedit autem id illo neque vel iusto internos! 33 veritatis consequatur id animi corporis eos repellendus recusandae. Qui consequatur corrupti ea obcaecati laboriosam et quasi amet qui minima necessitatibus sed aliquid laboriosam qui beatae nesciunt aut aliquam eveniet.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
-</div>
+        <!-- Contact Me Section Start -->
+         <section class = "contact" id = "contact">
+            <div class = "content">
+                <div class = "title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>Contact Me</span>
+                </div>
+                <div class = "text">
+                    <div class = "topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                        Have Any Project?
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet. Est inventore voluptate non dolorum sint sit distinctio voluptates est impedit autem id illo neque vel iusto internos! 33 veritatis consequatur id animi corporis eos repellendus recusandae. Qui consequatur corrupti ea obcaecati laboriosam et quasi amet qui minima necessitatibus sed aliquid laboriosam qui beatae nesciunt aut aliquam eveniet.
+                    </p>
+                    <div class = "button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                        <button>Let's Chat</button>
+                    </div>
+                </div>
+            </div>
+         </section>
 
+         <!-- Footer Section Start -->
+          <footer>
+            <div class = "text">
+                <span> Created By
+                    <a href="#">lebron069</a>
+                    | &#169; 2024 All Rights Reserved
+                </span>
+            </div>
+          </footer>
 
+          <script src="js/script.js" defer></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init({offset:0});
+          </script>
 </body>
 </html>
